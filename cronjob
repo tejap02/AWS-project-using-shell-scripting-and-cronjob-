@@ -1,0 +1,6 @@
+#frist step add cron job 
+crontab -e
+#add thise line
+30 9 * * * /home/ubuntu/aws_report.sh >> /home/ubuntu/aws_cron.log 2>&1
+#Verify cron job
+crontab -l
